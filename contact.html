@@ -269,89 +269,80 @@
         </div>
     </div>
 </section>
-
-<section class="mb-5 fade-in-up">
-    <div class="container">
-        <div class="row g-4">
-            
+<section class="mb-5">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 mx-auto">
-                <div class="modern-sidebar-card">
+            <div class="col-lg-12">
+                <div class="modern-sidebar-card p-4 p-lg-5">
                     <h3 class="fw-bold mb-2">Connect Directly</h3>
-                    <p class="text-muted mb-4 small">Fill out the fields below to direct your message to our administration hub.</p>
-                    
+                    <p class="text-muted mb-4">Fill out the fields below to direct your message to our administration hub.</p>
                     <form action="#" method="POST">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control custom-input" id="floatingName" placeholder="Full Name">
-                            <label for="floatingName" class="text-muted ms-2">Full Name</label>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control custom-input" id="floatingName" placeholder="Full Name">
+                                    <label for="floatingName" class="text-muted">Full Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control custom-input" id="floatingEmail" placeholder="Email Address">
+                                    <label for="floatingEmail" class="text-muted">Email Address</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <select class="form-select custom-input" id="floatingSubject" required>
+                                        <option value="" selected disabled hidden>Select message priority option</option>
+                                        <option value="data">Data Reporting</option>
+                                        <option value="hardware">Hardware Inquiries</option>
+                                        <option value="partnership">Community Partnerships</option>
+                                    </select>
+                                    <label for="floatingSubject" class="text-muted">Inquiry Topic</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control custom-input" id="floatingMessage" placeholder="Detailed Message..." style="height: 180px"></textarea>
+                                    <label for="floatingMessage" class="text-muted">Detailed Message...</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn-submit w-100 py-3">Submit Form Entry &rarr;</button>
+                            </div>
                         </div>
-                        
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control custom-input" id="floatingEmail" placeholder="Email Address">
-                            <label for="floatingEmail" class="text-muted ms-2">Email Address</label>
-                        </div>
-
-                        <div class="form-floating mb-4">
-                            <select class="form-select custom-input pt-3" id="floatingSubject" required>
-                                <option value="" selected disabled hidden>Select message priority option</option>
-                                <option value="data">Data Reporting</option>
-                                <option value="hardware">Hardware Inquiries</option>
-                                <option value="partnership">Community Partnerships</option>
-                                <option value="partnership">Others</option>
-                            </select>
-                            <label for="floatingSubject" class="text-muted ms-2">Inquiry Topic</label>
-                        </div>
-
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control custom-input" id="floatingMessage" placeholder="Detailed Message..." style="height: 150px"></textarea>
-                            <label for="floatingMessage" class="text-muted ms-2">Detailed Message...</label>
-                        </div>
-
-                        <button type="submit" class="btn-submit w-100">Submit Form Entry <i class="bi bi-arrow-right-short"></i></button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+</section>
 
-
-        
-        </div>
-
-        <div class="row g-4 mt-5">
+<section class="mb-5">
+    <div class="container">
+        <div class="row g-3">
             <div class="col-md-4">
-                <div class="contact-method-card">
-                    <div class="icon-box">
-                        <i class="bi bi-telephone-plus"></i>
-                    </div>
-                    <h5 class="fw-bold mb-1">Direct Call</h5>
-                    <p class="text-muted small mb-0">General Support Line</p>
-                    <a href="tel:+95987654321" class="stretched-link text-decoration-none fw-semibold text-dark d-block mt-2">+95 987 654 321</a>
+                <div class="contact-method-card" style="min-height: 220px; display: flex; flex-direction: column; justify-content: center;">
+                    <div class="icon-box mb-3"><i class="bi bi-telephone-plus"></i></div>
+                    <h5 class="fw-bold">Direct Call</h5>
+                    <a href="tel:+95987654321" class="stretched-link text-decoration-none fw-semibold text-dark">+95 987 654 321</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="contact-method-card">
-                    <div class="icon-box">
-                        <i class="bi bi-chat-square-heart"></i>
-                    </div>
-                    <h5 class="fw-bold mb-1">Electronic Mail</h5>
-                    <p class="text-muted small mb-0">Inquiries & Partnerships</p>
-                    <a href="mailto:smartcity@gmail.com" class="stretched-link text-decoration-none fw-semibold text-dark d-block mt-2">smartcity@gmail.com</a>
+                <div class="contact-method-card" style="min-height: 220px; display: flex; flex-direction: column; justify-content: center;">
+                    <div class="icon-box mb-3"><i class="bi bi-chat-square-heart"></i></div>
+                    <h5 class="fw-bold">Electronic Mail</h5>
+                    <a href="mailto:smartcity@gmail.com" class="stretched-link text-decoration-none fw-semibold text-dark">smartcity@gmail.com</a>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="contact-method-card">
-                    <div class="icon-box">
-                        <i class="bi bi-geo-alt"></i>
-                    </div>
-                    <h5 class="fw-bold mb-1">Headquarters</h5>
-                    <p class="text-muted small mb-0">Operations Control Center</p>
-                    <span class="fw-semibold text-dark d-block mt-2">Yangon, Myanmar</span>
+                <div class="contact-method-card" style="min-height: 220px; display: flex; flex-direction: column; justify-content: center;">
+                    <div class="icon-box mb-3"><i class="bi bi-geo-alt"></i></div>
+                    <h5 class="fw-bold">Headquarters</h5>
+                    <span class="fw-semibold text-dark">Yangon, Myanmar</span>
                 </div>
             </div>
         </div>
-        
     </div>
 </section>
 
